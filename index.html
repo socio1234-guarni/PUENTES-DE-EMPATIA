@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puentes de Empatía - Red Digital de Convivencia Escolar</title>
+    <meta name="description" content="Plataforma educativa para fortalecer la convivencia escolar con orientación, aprendizaje socioemocional y rutas de acompañamiento.">
+    <meta name="theme-color" content="#17365D">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a class="skip-link" href="#presentacion">Saltar al contenido</a>
+
+    <!-- SECCIÓN 1: ENCABEZADO Y NAVEGACIÓN -->
+    <header class="navbar-header" id="header">
+        <div class="nav-container">
+            <a href="#inicio" class="logo-brand">
+                <svg class="logo-icon" viewBox="0 0 40 40" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 26C10 16 16 14 20 14C24 14 30 16 34 26" stroke="#2A9D8F" stroke-width="3.5" stroke-linecap="round"/>
+                    <path d="M4 28C10 20 15 18 20 18C25 18 30 20 36 28" stroke="#2878A8" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="2 3"/>
+                    <circle cx="12" cy="12" r="4" fill="#17365D"/>
+                    <circle cx="28" cy="12" r="4" fill="#2A9D8F"/>
+                    <path d="M12 12C16 8 24 8 28 12" stroke="#17365D" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="brand-title">Puentes de Empatía</span>
+                    <span class="brand-sub">Red Digital de Convivencia</span>
+                </div>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#problematica" class="nav-link">Problemática</a></li>
+                    <li><a href="#estadisticas" class="nav-link">Estadísticas</a></li>
+                    <li><a href="#solucion" class="nav-link">Solución</a></li>
+                    <li><a href="#pmv" class="nav-link">PMV</a></li>
+                    <li><a href="#aula-empatia" class="nav-link">Aula de Empatía</a></li>
+                </ul>
+                <a href="#pmv" class="btn btn-header">Explorar Plataforma</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECCIÓN 2: PORTADA PRINCIPAL -->
+        <section class="hero-section" id="inicio">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="badge-tag">Emprendimiento social educativo</span>
+                    <h1 class="hero-title">La convivencia también se construye con empatía</h1>
+                    <p class="hero-description">
+                        Una plataforma educativa para aprender a escucharnos, comprender nuestras diferencias y fortalecer la convivencia escolar.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#pmv" class="btn btn-primary">Explorar la plataforma</a>
+                        <a href="#solucion" class="btn btn-secondary">Conocer nuestra propuesta</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-card-wrapper">
+                        <svg class="hero-illustration" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#17365D" />
+                                    <stop offset="100%" stop-color="#2878A8" />
+                                </linearGradient>
+                                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#2A9D8F" />
+                                    <stop offset="100%" stop-color="#2878A8" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Visual Background Elements -->
+                            <rect x="20" y="20" width="460" height="360" rx="24" fill="#F4F7FA" stroke="#E2E8F0" stroke-width="2"/>
+                            
+                            <!-- Connecting Arch/Bridge -->
+                            <path class="bridge-draw" pathLength="100" d="M90 260 C 180 120, 320 120, 410 260" stroke="url(#grad2)" stroke-width="8" stroke-linecap="round" fill="none"/>
+                            <path class="bridge-dots" d="M90 260 C 180 120, 320 120, 410 260" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round" fill="none"/>
+
+                            <!-- Left Character Node -->
+                            <g class="hero-node n1" transform="translate(80, 210)">
+                                <circle cx="30" cy="30" r="38" fill="url(#grad1)"/>
+                                <circle cx="30" cy="20" r="14" fill="#FFFFFF"/>
+                                <path d="M12 45 C 12 35, 48 35, 48 45" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+                                <rect x="-20" y="70" width="100" height="32" rx="16" fill="#FFFFFF" filter="drop-shadow(0px 4px 6px rgba(0,0,0,0.06))"/>
+                                <text x="30" y="90" fill="#17365D" font-family="sans-serif" font-weight="600" font-size="13" text-anchor="middle">Escucha</text>
+                            </g>
+
+                            <!-- Right Character Node -->
+                            <g class="hero-node n2" transform="translate(360, 210)">
+                                <circle cx="30" cy="30" r="38" fill="url(#grad2)"/>
+                                <circle cx="30" cy="20" r="14" fill="#FFFFFF"/>
+                                <path d="M12 45 C 12 35, 48 35, 48 45" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+                                <rect x="-20" y="70" width="100" height="32" rx="16" fill="#FFFFFF" filter="drop-shadow(0px 4px 6px rgba(0,0,0,0.06))"/>
+                                <text x="30" y="90" fill="#2A9D8F" font-family="sans-serif" font-weight="600" font-size="13" text-anchor="middle">Diálogo</text>
+                            </g>
+
+                            <!-- Central Bridge Connection Node -->
+                            <g class="hero-node n3" transform="translate(250, 150)">
+                                <circle cx="0" cy="0" r="32" fill="#FFFFFF" filter="drop-shadow(0px 6px 12px rgba(0,0,0,0.1))"/>
+                                <path d="M-12 -2 L-2 8 L14 -8" stroke="#2A9D8F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <rect x="-60" y="-60" width="120" height="28" rx="14" fill="#17365D"/>
+                                <text x="0" y="-42" fill="#FFFFFF" font-family="sans-serif" font-weight="600" font-size="12" text-anchor="middle">Empatía Digital</text>
+                            </g>
+
+                            <!-- Dialogue Bubbles -->
+                            <path class="hero-bubble" d="M 160 140 Q 180 110 210 120 Q 210 150 170 155 Z" fill="#2878A8" opacity="0.85"/>
+                            <path class="hero-bubble" d="M 340 140 Q 320 110 290 120 Q 290 150 330 155 Z" fill="#2A9D8F" opacity="0.85"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: PRESENTACIÓN DEL PROYECTO -->
+        <section class="section-padding bg-light" id="presentacion">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Sobre la iniciativa</span>
+                    <h2 class="section-title">Un espacio para comprendernos mejor</h2>
+                    <p class="section-subtitle">
+                        Puentes de Empatía es una propuesta de emprendimiento social educativo diseñada para el Colegio Jesús María que facilita la orientación inicial, el aprendizaje de habilidades socioemocionales y el acceso a los canales de acompañamiento.
+                    </p>
+                </div>
+
+                <div class="principles-grid">
+                    <div class="principle-card">
+                        <div class="icon-box icon-blue">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        </div>
+                        <h3>1. Empatía</h3>
+                        <p>Reconocer y comprender otras perspectivas, entendiendo las emociones y vivencias de nuestras compañeras antes de juzgar o reaccionar.</p>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="icon-box icon-teal">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                        <h3>2. Comunicación</h3>
+                        <p>Expresar ideas, sentimientos e inconformidades de manera respetuosa, asertiva y honesta, evitando malentendidos y rumores.</p>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="icon-box icon-navy">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3>3. Acompañamiento</h3>
+                        <p>Identificar con claridad cuándo y dónde buscar apoyo institucional, conectando oportunamente con docentes u orientación escolar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: PROBLEMÁTICA -->
+        <section class="section-padding" id="problematica">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Análisis del contexto</span>
+                    <h2 class="section-title">¿Por qué necesitamos construir puentes?</h2>
+                    <p class="section-subtitle">
+                        La convivencia escolar cotidiana se alimenta del trato diario. Cuando los malentendidos o desacuerdos no se gestionan a tiempo, se deteriora la confianza y el clima de aprendizaje.
+                    </p>
+                </div>
+
+                <div class="causes-grid">
+                    <div class="cause-item">
+                        <div class="cause-number">01</div>
+                        <div class="cause-content">
+                            <h3>Dificultades de comunicación asertiva</h3>
+                            <p>Algunas estudiantes expresan sus inconformidades con agresividad o, por el contrario, guardan silencio por temor, lo que impide resolver los desacuerdos de forma constructiva.</p>
+                        </div>
+                    </div>
+
+                    <div class="cause-item">
+                        <div class="cause-number">02</div>
+                        <div class="cause-content">
+                            <h3>Interpretaciones y rumores</h3>
+                            <p>La difusión de comentarios sin verificar y las interpretaciones erróneas en chats de grupos generan distancia y dañan la reputación y confianza entre compañeras.</p>
+                        </div>
+                    </div>
+
+                    <div class="cause-item">
+                        <div class="cause-number">03</div>
+                        <div class="cause-content">
+                            <h3>Poca práctica de habilidades socioemocionales</h3>
+                            <p>La autoregulación, la escucha activa y la capacidad de situarse en el lugar del otro son capacidades que requieren práctica guiada y continua en el entorno escolar.</p>
+                        </div>
+                    </div>
+
+                    <div class="cause-item">
+                        <div class="cause-number">04</div>
+                        <div class="cause-content">
+                            <h3>Desconocimiento de los canales de apoyo</h3>
+                            <p>Ante una situación difícil, a veces no se identifica a tiempo a cuál adulto responsable acudir ni la ruta para solicitar orientación escolar de manera discreta.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="consequences-box">
+                    <div class="consequences-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#17365D" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    </div>
+                    <div class="consequences-text">
+                        <h4>Impacto en la convivencia y el bienestar</h4>
+                        <p>
+                            Si estas causas no se atienden oportunamente, pueden generar aislamiento, tensión en los salones de clase y bajo rendimiento académico. 
+                            <em>Nota aclaratoria:</em> Esta caracterización responde a dinámicas generales de convivencia escolar y no representa un diagnóstico ni medición interna del Colegio Jesús María.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: ESTADÍSTICAS -->
+        <section class="section-padding bg-light" id="estadisticas">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Evidencia y contexto nacional</span>
+                    <h2 class="section-title">Una realidad que merece nuestra atención</h2>
+                    <p class="section-subtitle">
+                        Las estadísticas a nivel nacional evidencian la urgencia de promover entornos seguros, prevención activa y estrategias de mediación escolar.
+                    </p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-visual">
+                            <div class="circle-progress" data-value="21">
+                                <svg viewBox="0 0 36 36" class="circular-chart teal">
+                                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    <path class="circle" stroke-dasharray="21, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    <text x="18" y="20.35" class="percentage">21%</text>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Acoso Frecuente</h3>
+                            <p>De estudiantes en Colombia reportó alguna forma de acoso varias veces al mes o más, según PISA 2025.</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-visual">
+                            <div class="circle-progress" data-value="13">
+                                <svg viewBox="0 0 36 36" class="circular-chart blue">
+                                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    <path class="circle" stroke-dasharray="13, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    <text x="18" y="20.35" class="percentage">13%</text>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Difusión de Rumores</h3>
+                            <p>Reportó que otros estudiantes difundieron rumores desagradables sobre ellos, según PISA 2025.</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-visual">
+                            <div class="stat-number-badge">17.712</div>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Casos SIUCE 2024</h3>
+                            <p>Casos registrados en el Sistema de Información Unificado de Convivencia Escolar (SIUCE) durante 2024.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-disclaimer">
+                    <p><strong>Aclaración importante:</strong> Estos datos corresponden al ámbito nacional y no representan una medición interna del Colegio Jesús María. Se presentan para contextualizar la importancia de fortalecer la convivencia escolar.</p>
+                </div>
+
+                <div class="sources-box">
+                    <h4>Fuentes y referencias oficiales:</h4>
+                    <ul class="sources-list">
+                        <li>
+                            <span>Organización para la Cooperación y el Desarrollo Económicos (OCDE). (2026). <em>PISA 2025 Results: Country note – Colombia</em>.</span>
+                            <a href="https://www.oecd.org/en/publications/pisa-2025-results-volume-i-country-notes_2d4ff9ea-en/colombia_d64a60a2-en.html" target="_blank" rel="noopener noreferrer" class="source-link">Ver publicación OCDE &rarr;</a>
+                        </li>
+                        <li>
+                            <span>Ministerio de Educación Nacional. (2025). <em>Informe anual SIUCE 2024. Sistema de Información Unificado de Convivencia Escolar</em>.</span>
+                            <a href="https://www.mineducacion.gov.co/1780/articles-404764_recurso_15.pdf" target="_blank" rel="noopener noreferrer" class="source-link">Ver informe MEN &rarr;</a>
+                        </li>
+                        <li>
+                            <span>Instituto Colombiano para la Evaluación de la Educación (Icfes). (2026). <em>Informe nacional de resultados para Colombia 2025</em>.</span>
+                            <a href="https://www.icfes.gov.co/wp-content/uploads/2026/11/INFORME_PISA_25.pdf" target="_blank" rel="noopener noreferrer" class="source-link">Ver informe Icfes &rarr;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 6: PROPUESTA DE SOLUCIÓN -->
+        <section class="section-padding" id="solucion">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Nuestra propuesta</span>
+                    <h2 class="section-title">Una solución que conecta orientación, aprendizaje y acompañamiento</h2>
+                    <p class="section-subtitle">
+                        Integramos recursos preventivos, formación práctica y canales institucionales organizados en una sola experiencia digital accesible.
+                    </p>
+                </div>
+
+                <div class="components-grid">
+                    <div class="component-card">
+                        <span class="comp-step">01</span>
+                        <h3>Orientación inicial</h3>
+                        <p>Guías inmediatas y recomendaciones para reflexionar sobre desacuerdos y situaciones cotidianas.</p>
+                    </div>
+                    <div class="component-card">
+                        <span class="comp-step">02</span>
+                        <h3>Solicitud privada de acompañamiento</h3>
+                        <p>Canal discreto para requerir orientación de personal autorizado sin exposición pública.</p>
+                    </div>
+                    <div class="component-card">
+                        <span class="comp-step">03</span>
+                        <h3>Derivación responsable</h3>
+                        <p>Direccionamiento claro hacia docentes, mediación o comités de convivencia según la gravedad.</p>
+                    </div>
+                    <div class="component-card">
+                        <span class="comp-step">04</span>
+                        <h3>Aprendizaje interactivo</h3>
+                        <p>Módulos prácticos y escenarios formativos para entrenar la comunicación y la empatía.</p>
+                    </div>
+                    <div class="component-card">
+                        <span class="comp-step">05</span>
+                        <h3>Seguimiento general</h3>
+                        <p>Panel con indicadores agregados y anónimos para evaluar el interés y la participación escolar.</p>
+                    </div>
+                </div>
+
+                <div class="value-proposition-box">
+                    <div class="vp-badge">Valor Diferencial</div>
+                    <h3>Prevención y acompañamiento en un mismo espacio digital</h3>
+                    <p>
+                        A diferencia de un simple buzón estático o una charla ocasional, Puentes de Empatía acompaña permanentemente a la estudiante, combinando la formación autónoma con un puente directo y seguro hacia el equipo de orientación del colegio.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 7: EXPLORACIÓN DEL PRODUCTO MÍNIMO VIABLE (PMV) -->
+        <section class="section-padding bg-light" id="pmv">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Prototipo navegable</span>
+                    <h2 class="section-title">Explora nuestro Producto Mínimo Viable</h2>
+                    <p class="section-subtitle">
+                        Haz clic en cada módulo para interactuar con sus funciones demostrativas y conocer la arquitectura de la propuesta.
+                    </p>
+                </div>
+
+                <div class="modules-grid">
+                    <div class="module-card">
+                        <div class="module-header">
+                            <span class="mod-number">MÓDULO 1</span>
+                            <h3>Inicio y navegación</h3>
+                        </div>
+                        <p>Presenta la visión global del proyecto, su fundamentación y permite un desplazamiento fluido hacia todas las áreas.</p>
+                        <button class="btn btn-outline module-btn" data-target="#inicio">Explorar Módulo 1</button>
+                    </div>
+
+                    <div class="module-card">
+                        <div class="module-header">
+                            <span class="mod-number">MÓDULO 2</span>
+                            <h3>Centro de orientación</h3>
+                        </div>
+                        <p>Permite seleccionar categorías de conflictos cotidianos y consultar guías de comunicación y reflexión.</p>
+                        <button class="btn btn-outline module-btn" data-target="#centro-orientacion">Explorar Módulo 2</button>
+                    </div>
+
+                    <div class="module-card">
+                        <div class="module-header">
+                            <span class="mod-number">MÓDULO 3</span>
+                            <h3>Solicitud de acompañamiento (demo)</h3>
+                        </div>
+                        <p>Formulario de prueba que demuestra el procedimiento simulado de solicitud confidencial de apoyo.</p>
+                        <button class="btn btn-outline module-btn" data-target="#formulario-demo">Explorar Módulo 3</button>
+                    </div>
+
+                    <div class="module-card">
+                        <div class="module-header">
+                            <span class="mod-number">MÓDULO 4</span>
+                            <h3>Ruta de atención</h3>
+                        </div>
+                        <p>Diagrama interactivo que ilustra los pasos institucionales desde la consulta hasta el seguimiento.</p>
+                        <button class="btn btn-outline module-btn" data-target="#ruta-atencion">Explorar Módulo 4</button>
+                    </div>
+
+                    <div class="module-card">
+                        <div class="module-header">
+                            <span class="mod-number">MÓDULO 5</span>
+                            <h3>Aula de empatía</h3>
+                        </div>
+                        <p>Cápsulas educativas y cuestionario interactivo con escenarios prácticos de resolución de situaciones.</p>
+                        <button class="btn btn-outline module-btn" data-target="#aula-empatia">Explorar Módulo 5</button>
+                    </div>
+
+                    <div class="module-card">
+                        <div class="module-header">
+                            <span class="mod-number">MÓDULO 6</span>
+                            <h3>Panel de indicadores</h3>
+                        </div>
+                        <p>Dashboard interactivo con métricas simuladas sobre visitas, uso y actividades en el prototipo.</p>
+                        <button class="btn btn-outline module-btn" data-target="#panel-indicadores">Explorar Módulo 6</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 8: CENTRO DE ORIENTACIÓN -->
+        <section class="section-padding" id="centro-orientacion">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Módulo 2</span>
+                    <h2 class="section-title">Centro de Orientación</h2>
+                    <p class="section-subtitle">
+                        Selecciona una categoría para acceder a pautas preventivas, reflexiones guiadas y sugerencias de comunicación.
+                    </p>
+                </div>
+
+                <div class="orientation-container">
+                    <div class="category-tabs" id="categoryTabs">
+                        <button class="tab-btn active" data-category="desacuerdos">Desacuerdos</button>
+                        <button class="tab-btn" data-category="comunicacion">Comunicación asertiva</button>
+                        <button class="tab-btn" data-category="exclusion">Exclusión</button>
+                        <button class="tab-btn" data-category="rumores">Rumores</button>
+                        <button class="tab-btn" data-category="digitales">Conflictos digitales</button>
+                    </div>
+
+                    <div class="orientation-panel" id="orientationPanel">
+                        <!-- Content populated dynamically via JS -->
+                        <div class="panel-card">
+                            <h3 id="panelTitle">Cargando categoría...</h3>
+                            <div class="panel-section">
+                                <h4>Explicación:</h4>
+                                <p id="panelExplanation"></p>
+                            </div>
+                            <div class="panel-section highlight-bg">
+                                <h4>Recomendación general:</h4>
+                                <p id="panelRecommendation"></p>
+                            </div>
+                            <div class="panel-section reflection-bg">
+                                <h4>Pregunta para reflexionar:</h4>
+                                <p id="panelReflection" class="reflection-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 9: FORMULARIO DEMOSTRATIVO -->
+        <section class="section-padding bg-light" id="formulario-demo">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Módulo 3</span>
+                    <h2 class="section-title">Solicitud de Acompañamiento (Demostración)</h2>
+                    <p class="section-subtitle">
+                        Este espacio recrea cómo una estudiante solicitaría orientación a las directivas en una versión activa.
+                    </p>
+                </div>
+
+                <div class="demo-form-wrapper">
+                    <div class="alert-box alert-warning">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        <p><strong>Aviso de privacidad y uso demostrativo:</strong> Este formulario es una demostración académica. No escribas nombres, datos personales ni relatos de situaciones reales. La versión real requeriría autorización institucional y acceso exclusivo del personal designado.</p>
+                    </div>
+
+                    <form id="accompanimentForm" class="demo-form">
+                        <div class="form-group">
+                            <label for="motivoSelect">Motivo general de consulta (Simulado):</label>
+                            <select id="motivoSelect" class="form-control" required>
+                                <option value="" disabled selected>Selecciona una opción de prueba...</option>
+                                <option value="desacuerdo">Orientación ante un desacuerdo en clase</option>
+                                <option value="comunicacion">Mejora de la comunicación en equipos</option>
+                                <option value="convivencia">Acompañamiento en mediación escolar</option>
+                                <option value="consulta">Consulta sobre canales de apoyo escolar</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tipoOrientacion">Tipo de orientación requerida:</label>
+                            <select id="tipoOrientacion" class="form-control" required>
+                                <option value="" disabled selected>Selecciona un tipo de acompañamiento...</option>
+                                <option value="individual">Charla orientadora individual</option>
+                                <option value="grupal">Taller de mediación grupal</option>
+                                <option value="recursos">Lectura de guías y materiales digitales</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="campoPrueba">Comentario opcional de prueba (académico):</label>
+                            <textarea id="campoPrueba" class="form-control" rows="3" placeholder="Escribe únicamente un texto simulado de prueba..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Simular Envío de Solicitud</button>
+                    </form>
+
+                    <!-- JS Modal / Feedback -->
+                    <div id="formSuccessMessage" class="form-response hidden" tabindex="-1" role="status">
+                        <div class="response-icon">✓</div>
+                        <h3>¡Demostración completada!</h3>
+                        <p>En esta versión académica no se ha enviado ni almacenado ninguna información.</p>
+                        <button id="resetFormBtn" class="btn btn-secondary btn-sm">Probar de nuevo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 10: RUTA DE ATENCIÓN -->
+        <section class="section-padding" id="ruta-atencion">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Módulo 4</span>
+                    <h2 class="section-title">Ruta de Atención Institucional</h2>
+                    <p class="section-subtitle">
+                        Flujo proyectado para la recepción, valoración y derivación responsable de solicitudes en una implementación real.
+                    </p>
+                </div>
+
+                <div class="route-stepper">
+                    <div class="step-card">
+                        <div class="step-badge">Paso 1</div>
+                        <h4>Identificación</h4>
+                        <p>La estudiante identifica que requiere orientación ante una situación de convivencia.</p>
+                    </div>
+
+                    <div class="step-arrow">&rarr;</div>
+
+                    <div class="step-card">
+                        <div class="step-badge">Paso 2</div>
+                        <h4>Consulta / Solicitud</h4>
+                        <p>Consulta los recursos preventivos o solicita acompañamiento en la plataforma.</p>
+                    </div>
+
+                    <div class="step-arrow">&rarr;</div>
+
+                    <div class="step-card">
+                        <div class="step-badge">Paso 3</div>
+                        <h4>Revisión Autorizada</h4>
+                        <p>En una implementación real, el personal designado revisa la solicitud confidencial.</p>
+                    </div>
+
+                    <div class="step-arrow">&rarr;</div>
+
+                    <div class="step-card">
+                        <div class="step-badge">Paso 4</div>
+                        <h4>Valoración y Canal</h4>
+                        <p>El personal determina si aplica orientación, mediación o protocolo institucional.</p>
+                    </div>
+
+                    <div class="step-arrow">&rarr;</div>
+
+                    <div class="step-card">
+                        <div class="step-badge">Paso 5</div>
+                        <h4>Acompañamiento</h4>
+                        <p>Se realiza el seguimiento oportuno según los procedimientos oficiales del colegio.</p>
+                    </div>
+                </div>
+
+                <div class="route-notice text-center">
+                    <p><strong>Nota institucional:</strong> Esta ruta es ilustrativa y debe ser validada por el Colegio Jesús María antes de cualquier implementación real.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 11: AULA DE EMPATÍA -->
+        <section class="section-padding bg-light" id="aula-empatia">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Módulo 5</span>
+                    <h2 class="section-title">Aula de Empatía</h2>
+                    <p class="section-subtitle">
+                        Aprende con nuestras cápsulas educativas y pon a prueba tus habilidades socioemocionales en el cuestionario interactivo.
+                    </p>
+                </div>
+
+                <!-- Cápsulas Educativas -->
+                <div class="capsules-grid">
+                    <div class="capsule-card">
+                        <div class="capsule-tag">Cápsula 1</div>
+                        <h3>Escucha Activa</h3>
+                        <p>Escuchar activamente implica prestar atención plena sin interrumpir ni preparar la respuesta antes de que la otra persona termine de hablar.</p>
+                    </div>
+
+                    <div class="capsule-card">
+                        <div class="capsule-tag">Cápsula 2</div>
+                        <h3>Comunicación Asertiva</h3>
+                        <p>Consiste en expresar tus pensamientos y sentimientos usando frases en primera persona («Yo siento», «Me gustaría») sin descalificar al otro.</p>
+                    </div>
+
+                    <div class="capsule-card">
+                        <div class="capsule-tag">Cápsula 3</div>
+                        <h3>Empatía Cotidiana</h3>
+                        <p>Ponerse en los zapatos del compañero permite entender sus circunstancias y evitar reacciones impulsivas ante un malentendido.</p>
+                    </div>
+                </div>
+
+                <!-- Cuestionario Interactivo -->
+                <div class="quiz-wrapper">
+                    <div class="quiz-header">
+                        <h3>Cuestionario Interactivo: Situaciones de Convivencia</h3>
+                        <div class="quiz-progress-bar">
+                            <div class="quiz-progress-fill" id="quizProgress"></div>
+                        </div>
+                    </div>
+
+                    <div id="quizContainer" class="quiz-body">
+                        <div class="question-step" id="questionBox">
+                            <h4 id="questionTitle">Cargando pregunta...</h4>
+                            <div class="options-group" id="optionsContainer">
+                                <!-- Options populated by JS -->
+                            </div>
+                            <div id="feedbackBox" class="feedback-box hidden">
+                                <p id="feedbackText"></p>
+                                <button id="nextBtn" class="btn btn-primary btn-sm">Siguiente Pregunta</button>
+                            </div>
+                        </div>
+
+                        <div id="quizResultBox" class="quiz-result hidden">
+                            <div class="result-icon" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.7 2.7L16 9.5"/></svg></div>
+                            <h3>¡Actividad Completada!</h3>
+                            <p id="finalScoreText">Obtuviste 0 de 3 respuestas adecuadas.</p>
+                            <p class="result-feedback" id="resultFeedbackText"></p>
+                            <button id="retryQuizBtn" class="btn btn-secondary">Intentar nuevamente</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 12: PANEL DE INDICADORES -->
+        <section class="section-padding" id="panel-indicadores">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Módulo 6</span>
+                    <h2 class="section-title">Panel de Indicadores Demostrativos</h2>
+                    <p class="section-subtitle">
+                        Simulación gráfica de métricas de uso y participación del prototipo escolar.
+                    </p>
+                </div>
+
+                <div class="dashboard-notice">
+                    <p><strong>Nota informativa:</strong> Datos ficticios de demostración: no representan información real de estudiantes ni resultados institucionales.</p>
+                </div>
+
+                <div class="dashboard-grid">
+                    <div class="dash-card">
+                        <div class="dash-title">Visitas Simuladas</div>
+                        <div class="dash-metric" id="metricVisitas">342</div>
+                        <div class="dash-sub">Interacciones registradas</div>
+                    </div>
+
+                    <div class="dash-card">
+                        <div class="dash-title">Actividades Completadas</div>
+                        <div class="dash-metric" id="metricActividades">128</div>
+                        <div class="dash-sub">Cuestionarios finalizados</div>
+                    </div>
+
+                    <div class="dash-card">
+                        <div class="dash-title">Solicitudes Simuladas</div>
+                        <div class="dash-metric" id="metricSolicitudes">45</div>
+                        <div class="dash-sub">Pruebas de formulario</div>
+                    </div>
+
+                    <div class="dash-card">
+                        <div class="dash-title">Participación Ficticia</div>
+                        <div class="dash-metric">89%</div>
+                        <div class="dash-sub">Tasa de finalización</div>
+                    </div>
+                </div>
+
+                <div class="dashboard-charts">
+                    <div class="chart-card">
+                        <h4>Módulos más consultados (Simulado)</h4>
+                        <div class="bar-group">
+                            <div class="bar-label">
+                                <span>Centro de orientación</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-label">
+                                <span>Aula de empatía</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill" style="width: 70%;"></div></div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-label">
+                                <span>Solicitud de acompañamiento</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill" style="width: 45%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 13: BENEFICIOS E IMPACTO ESPERADO -->
+        <section class="section-padding bg-light" id="impacto">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Proyección institucional</span>
+                    <h2 class="section-title">Beneficios e Impacto Esperado</h2>
+                    <p class="section-subtitle">
+                        Aportes transformadores de la herramienta para la convivencia en el Colegio Jesús María.
+                    </p>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-check">✓</div>
+                        <h4>Fortalecer la comunicación respetuosa</h4>
+                        <p>Brinda herramientas claras para expresar desacuerdos sin recurrir a la agresión ni al aislamiento.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-check">✓</div>
+                        <h4>Promover la escucha activa y la empatía</h4>
+                        <p>Desarrolla espacios reflexivos para situarse en el lugar del otro antes de reaccionar impulsivamente.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-check">✓</div>
+                        <h4>Facilitar el conocimiento de los canales</h4>
+                        <p>Asegura que cada estudiante sepa con claridad a quién acudir y cómo solicitar acompañamiento.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-check">✓</div>
+                        <h4>Promover la resolución pacífica</h4>
+                        <p>Fomenta el diálogo directo y la mediación escolar como vía preventiva ante los malentendidos.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-check">✓</div>
+                        <h4>Uso constructivo de la tecnología</h4>
+                        <p>Aprovecha las redes y plataformas web como aliadas del bienestar socioemocional y la convivencia.</p>
+                    </div>
+                </div>
+
+                <div class="impact-conditions">
+                    <h4>Condiciones para alcanzar el impacto proyectado:</h4>
+                    <p>
+                        El éxito y la efectividad de la plataforma dependerán de la pertinencia de sus contenidos, la validación institucional, el conocimiento activo de la herramienta por parte de la comunidad estudiantil y el acompañamiento responsable del personal del colegio.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- SECCIÓN 14: PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>Puentes de Empatía</h3>
+                    <p>Red Digital de Convivencia y Acompañamiento Escolar</p>
+                </div>
+
+                <div class="footer-info">
+                    <p><strong>Integrantes:</strong> Laura Guarnizo y Ana Sofía Mejía</p>
+                    <p><strong>Institución:</strong> Colegio Jesús María</p>
+                    <p><strong>Asignatura:</strong> Tecnología e Informática – Emprendimiento</p>
+                    <p><strong>Grado:</strong> 10.º | <strong>Año:</strong> 2026</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#problematica">Problemática</a></li>
+                        <li><a href="#estadisticas">Estadísticas</a></li>
+                        <li><a href="#solucion">Solución</a></li>
+                        <li><a href="#pmv">Módulos PMV</a></li>
+                        <li><a href="#aula-empatia">Aula de Empatía</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center">
+                <p class="quote">«Construir una mejor convivencia comienza por aprender a escucharnos»</p>
+                <p class="copyright">&copy; 2026 Puentes de Empatía - Proyecto de Emprendimiento Social Educativo.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
